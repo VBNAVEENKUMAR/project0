@@ -1,0 +1,177 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.aboutUs {
+    background-color: lightgray;
+}
+.main-comp {
+    /* background-image: url("https://cdn.wallpapersafari.com/87/87/i8ZSpd.jpg");
+     */
+    /* position: relative; */
+    background-color: antiquewhite;
+    height: inherit;
+}
+
+.aboutUs-container {
+    background-color: antiquewhite;
+    border-radius: 14px;
+    border: 1px solid dashed;
+    margin: 10px;
+    padding: 10px;
+}
+
+.weather-details {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: skyblue;
+    color: black;
+    text-align: center;
+}
+
+.weather-input {
+    border: 1px solid black;
+    color: black;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+}
+.header{
+    display: flex;
+    position: static;
+    box-shadow: 0px 0px 4px 5px rgb(128, 128, 128);
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to left, gold, rgb(255, 255, 255));
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 6vh;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+
+main-comp div {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+main-comp img {
+    max-width: 100%;
+    height: auto;
+}
+.contactUs {
+    text-align: center;
+    background:linear-gradient(to right, gold,white);
+}
+#img{
+    height: 350px;
+    width: 350px;
+}
+
+.aboutUs-container{
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 6px 3px black;
+    width: 70%;
+}
+
+.hotel-container{
+    display: inline-block;
+    box-shadow: 0px 2px 4px 5px gray;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 4%;
+    width: 20vw;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    background:linear-gradient(to right, white, rgb(31, 145, 176));
+    position: relative;
+    border: none;
+   
+  
+   
+}
+.hotel-container:hover{
+    background:linear-gradient(to right, skyblue, white);
+    transition: ease-in 1s;
+    border-radius: 10px;
+    font-size: 19px;
+    color: black;
+}
+
+#hotel-name{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#hotel-address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    background-color: transparent;
+}
+
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+}
+
+
+.hotel-details {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+#hotel-detail-img{
+    height: 400px;
+ 
+}
+
+@media all and (max-width) {
+    .main-comp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
