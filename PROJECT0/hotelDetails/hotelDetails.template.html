@@ -1,0 +1,12 @@
+<div style="background:linear-gradient(to right, white, cyan);padding: 50px;border-radius: 14px;" class="hotel-details">
+    <img src=""/>
+    <h1>{{ $ctrl.hotel.name }} Details</h1>
+    <h4>Address: {{ $ctrl.hotel.address }}</h4>
+    <p>Price: {{ $ctrl.hotel.price}}</p>
+    <div class="weather-container" ng-if="$ctrl.weatherData">
+        <p>City: {{$ctrl.weatherData.name}}</p>
+        <p>Temperature: {{$ctrl.weatherData.main.temp}} °C</p>
+        <p>Wind Speed: {{$ctrl.weatherData.wind.speed}} m/s</p>
+        <p>Precipitation: {{$ctrl.weatherData.weather[0].description}}</p>
+    </div>
+</div>

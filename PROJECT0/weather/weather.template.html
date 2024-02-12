@@ -1,0 +1,15 @@
+<div class="weather-details">
+    <div>
+        <h1>Weather</h1>
+    </div>
+    CITY<input style="border: none;" class="weather-input" type="text" ng-model="$ctrl.city" placeholder="Enter a City">
+    <button style="background-color: aquamarine; border: none;
+    border-radius: 13px; padding: 14px; margin: 10px;" class="weather-button" ng-click="$ctrl.getWeather()">Get Weather</button>
+
+    <div class="weather-container" ng-if="$ctrl.weatherData">
+        <p>City: {{$ctrl.weatherData.name}}</p>
+        <p>Temperature: {{$ctrl.weatherData.main.temp}} °C</p>
+        <p>Wind Speed: {{$ctrl.weatherData.wind.speed}} m/s</p>
+        <p>Precipitation: {{$ctrl.weatherData.weather[0].description}}</p>
+    </div>
+</div>

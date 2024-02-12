@@ -1,0 +1,15 @@
+<div class="main-comp">
+    <div class="search" >
+       <input class="inputs" style="padding: 13px; border-radius: 15px;" type="text" ng-model="query">
+       <button style="background-color: blueviolet;border-radius: 10px; padding: 14px; border: none;
+       color: white; margin: 10px;" type="submit">Search</button>
+   </div>
+    <div class="hotel-container" ng-repeat="hotel in $ctrl.hotels| filter: query" >
+       <a ng-href="#!hotel/{{hotel.id}}">
+       <!-- <img id="img" ng-src="{{ hotel.imagePath}}"> -->
+       <h3 id="hotel-name">Name : {{hotel.name}}</h3>
+       <p id="hotel-address">Address : {{hotel.address}}</p>
+       <p id="price">Price : {{hotel.price}}</p>
+    </a>
+    </div>
+ </div>
